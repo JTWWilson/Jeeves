@@ -47,7 +47,7 @@ def get_forecast_for_lat_lon(latitude, longitude):
     conn = datapoint.Manager(api_key="****")
 
     # Get nearest site and print out its name
-    site = conn.get_nearest_site(longitude, latitude)
+    site = conn.get_nearest_site(latitude=latitude, longitude=longitude)
     # print site.name
 
     # Get a forecast for the nearest site
